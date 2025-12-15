@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js"></script>
+    <script src="./content.js"></script>
+  </head>
+  <body>
+    <header>
+      <a>求學求分數，順便做埋呢啲</a>
+      <hr />
+    </header>
+    <main>
+      <h1 id="title"></h1>
+      <p id="content"></p>
+    </main>
+    <footer>
+      <hr />
+      <input type="button" onclick="goN()" value="下一頁" id="NP" />
+    </footer>
+  </body>
+  <script>
+    goN();
+    if (tar.length == 1) {
+      document.getElementById("NP").remove();
+    }
+  </script>
+  <script src="./append.js"></script>
+</html>

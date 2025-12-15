@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(-45deg, #0c2a50, #1f0c53, #01031f, #350032);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: larger;
+  color: #fff;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  width: 100vw;
+  padding: 2vh;
+  text-align: center;
+  position: fixed;
+  top: 0%;
+  background: linear-gradient(-45deg, #0c2a50, #1f0c53, #01031f, #350032);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  z-index: 1;
+}
+
+main {
+  padding: 12rem 0 12rem;
+  position: sticky;
+  width: 80vw;
+  top: 4rem;
+  left: 2rem;
+}
+
+input {
+  border: solid 2px #aaa;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  width: min(100%, 20rem);
+  height: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+  transition: 500ms;
+  z-index: 1;
+}
+
+input:focus,
+input:hover {
+  border: solid 2px #fff;
+  background-color: #fff;
+  color: #000;
+  transition: 500ms;
+}
+
+footer {
+  width: 100vw;
+  padding: 2vh;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(-45deg, #0c2a50, #1f0c53, #01031f, #350032);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  z-index: 1;
+}
