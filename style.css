@@ -47,7 +47,8 @@ main {
   left: 2rem;
 }
 
-input {
+input,
+select {
   border: solid 2px #aaa;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0);
@@ -61,7 +62,8 @@ input {
 }
 
 input:focus,
-input:hover {
+input:hover,
+select:hover {
   border: solid 2px #fff;
   background-color: #fff;
   color: #000;
